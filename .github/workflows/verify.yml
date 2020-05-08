@@ -3,6 +3,7 @@ on: [push, pull_request]
 
 jobs:
   verify_job:
+    runs-on: ubuntu-latest
     container:
       image:  maven:3-jdk-8-slim
     steps:
